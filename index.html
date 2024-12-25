@@ -3,12 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctolib</title>
+    <title>Connexion - Doctolib</title>
     <link rel="stylesheet" href="./index.css">
+    <style>
+        /* Ajout d'un style rapide */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c6def;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .login-container p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .login-container a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>hello world</h1>
+    <div class="login-container">
+        <h1>Connexion à Doctolib</h1>
+        <form id="login-form">
+            <input type="email" placeholder="Adresse e-mail" >
+            <input type="password" placeholder="Mot de passe" >
+            <button type="submit">Se connecter</button>
+        </form>
+        <p>Pas encore de compte ? <a href="#">S'inscrire</a></p>
+    </div>
     
     <script src="./index.js"></script>
 </body>
